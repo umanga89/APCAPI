@@ -28,8 +28,6 @@ jobs:
           command: mvn clean install
       - store_test_results:
           path: /home/circleci/project/target/cucumber-report.html
-      - store_test_results:
-          path: /home/circleci/project/target/testlog.log
       - store_artifacts:
           path: /home/circleci/project/target/cucumber-report.html
       - store_artifacts:
