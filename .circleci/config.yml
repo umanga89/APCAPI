@@ -35,7 +35,7 @@ jobs:
           name: Save test results
           command: |
             mkdir -p ~/test-results/cucumber-report/
-            find . -type f -regex ".*/target/.*html" -exec cp {} ~/test-results/cucumber-report/ \;
+            find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} ~/test-results/cucumber-report/ \;
           when: always
       - store_test_results:
           path: ~/test-results
