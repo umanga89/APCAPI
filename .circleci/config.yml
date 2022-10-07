@@ -27,7 +27,7 @@ jobs:
           name: Test
           command: mvn clean install
       - store_test_results:
-          path: /home/circleci/project/target/
+          path: /home/circleci/project/target/surefire-reports/
       - store_artifacts:
           path: /home/circleci/project/target/cucumber-report.html
       - store_artifacts:
